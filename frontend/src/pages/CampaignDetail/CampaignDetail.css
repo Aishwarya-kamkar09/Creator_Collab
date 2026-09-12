@@ -1,0 +1,145 @@
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--umber);
+  margin-bottom: 22px;
+}
+
+.back-link:hover {
+  color: var(--rose-deep);
+}
+
+.detail-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.detail-category {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--umber);
+  opacity: 0.8;
+}
+
+.detail-title {
+  font-size: clamp(26px, 3.6vw, 34px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.detail-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(150deg, var(--sage), var(--sage-deep));
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fraunces", serif;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.detail-brand-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.detail-brand-sub {
+  font-size: 13px;
+  color: var(--umber);
+  opacity: 0.8;
+}
+
+.detail-section {
+  margin-bottom: 30px;
+}
+
+.detail-section h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.detail-desc {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--umber);
+  white-space: pre-line;
+}
+
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-left: 20px;
+}
+
+.detail-list li {
+  font-size: 14px;
+  color: var(--umber);
+  line-height: 1.5;
+}
+
+.detail-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 100px;
+}
+
+.detail-summary {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: var(--umber);
+}
+
+.summary-row strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.apply-card {
+  padding: 22px;
+}
+
+.apply-card h3 {
+  font-size: 17px;
+  margin-bottom: 14px;
+}

@@ -1,0 +1,68 @@
+export const creators = [
+    {
+        name: "Isaiah Lamb",
+        cat: "Health & Fitness",
+        price: "$300",
+        tag: "36.1k",
+        tags: "fitness,gym",
+        lock: 21,
+        g1: "#A2AE9D",
+        g2: "#54463A"
+    },
+
+    {
+        name: "Nadia Okafor",
+        cat: "Beauty · Skincare",
+        price: "$240",
+        tag: "29.7k",
+        tags: "skincare,beauty",
+        lock: 34,
+        g1: "#828F7D",
+        g2: "#54463A"
+    },
+
+    {
+        name: "Tiki Caldwell",
+        cat: "Fashion · Style",
+        price: "$200",
+        tag: "17.8k",
+        tags: "fashion,style",
+        lock: 12,
+        g1: "#54463A",
+        g2: "#2E2620"
+    },
+
+    {
+        name: "Chelsea Evans",
+        cat: "Animals & Pets",
+        price: "$150",
+        tag: "24.3k",
+        tags: "dog,pet",
+        lock: 47,
+        g1: "#F0B8B8",
+        g2: "#C75F71"
+    },
+
+    {
+        name: "Marcus Reyes",
+        cat: "Travel · UGC",
+        price: "$180",
+        tag: "21.4k",
+        tags: "travel,adventure",
+        lock: 58,
+        g1: "#A9495B",
+        g2: "#54463A"
+    },
+
+    {
+        name: "Allee-Sutton H.",
+        cat: "Lifestyle · Creator",
+        price: "$65",
+        tag: "16.6k",
+        tags: "coffee,lifestyle",
+        lock: 9,
+        g1: "#C75F71",
+        g2: "#A9495B"
+    }
+];
+

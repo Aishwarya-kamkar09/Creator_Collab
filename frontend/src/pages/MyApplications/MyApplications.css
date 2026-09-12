@@ -1,0 +1,46 @@
+.my-applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.application-list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 26px;
+  flex-wrap: wrap;
+}
+
+.application-list-top {
+  margin-bottom: 10px;
+}
+
+.application-list-title {
+  display: block;
+  font-family: "Fraunces", serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.application-list-title:hover {
+  color: var(--rose-deep);
+}
+
+.application-list-sub {
+  font-size: 13px;
+  color: var(--umber);
+  margin-bottom: 10px;
+}
+
+.application-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--rose-deep);
+}

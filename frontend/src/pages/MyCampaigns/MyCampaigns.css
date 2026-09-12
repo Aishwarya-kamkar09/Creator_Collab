@@ -1,0 +1,46 @@
+.my-campaigns-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.my-campaign-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 26px;
+  flex-wrap: wrap;
+}
+
+.my-campaign-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.my-campaign-cat {
+  font-size: 12.5px;
+  color: var(--umber);
+  opacity: 0.8;
+}
+
+.my-campaign-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.my-campaign-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--umber);
+}
+
+.my-campaign-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}

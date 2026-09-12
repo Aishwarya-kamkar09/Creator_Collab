@@ -1,0 +1,150 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #abb2b9;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #abb2b9;
+}
+
+/* --- Header / Navbar --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 28px;
+  background-color: #abb2b9;
+  border-bottom: 2px solid #202b38;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.logo-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-btn {
+  background-color: #0a6681;
+  color: #ffffff;
+  border: 1.5px solid #000000;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.nav-btn:hover {
+  background-color: #085369;
+}
+
+/* --- Main Content Area --- */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Distinct curved shape matching image */
+.curved-card {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 520px;
+  background-color: #9ec1e6;
+  border: 2px solid #000000;
+  border-radius: 65px 180px 40px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+/* --- Typography --- */
+.hero-title {
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 52px;
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+  line-height: 1.25;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.script-text {
+  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+  color: #0c72b0;
+  font-size: 58px;
+  font-weight: 700;
+}
+
+/* --- Search Bar --- */
+.search-bar {
+  width: 90%;
+  max-width: 820px;
+  height: 46px;
+  background-color: #c0c6ca;
+  border: 1.5px solid #000000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 3px 3px 3px 18px;
+}
+
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #000000;
+}
+
+.search-btn {
+  height: 100%;
+  background-color: #0a6681;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  padding: 0 32px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #085369;
+}

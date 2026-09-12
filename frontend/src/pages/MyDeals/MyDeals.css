@@ -1,0 +1,42 @@
+.my-deals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.deal-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 24px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.deal-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 34px -22px rgba(46, 38, 32, 0.4);
+}
+
+.deal-row-top {
+  margin-bottom: 8px;
+}
+
+.deal-row-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.deal-row-sub {
+  font-size: 12.5px;
+  color: var(--umber);
+  opacity: 0.8;
+}
+
+.deal-row-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--rose-deep);
+  flex-shrink: 0;
+}

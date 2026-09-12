@@ -1,0 +1,40 @@
+.create-campaign-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.create-campaign-form {
+  width: 100%;
+  max-width: 640px;
+  padding: 34px;
+}
+
+.editable-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.editable-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--cream-2);
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.editable-list li button {
+  font-size: 17px;
+  line-height: 1;
+  color: var(--umber);
+  flex-shrink: 0;
+}
+
+.editable-list li button:hover {
+  color: var(--rose-deep);
+}

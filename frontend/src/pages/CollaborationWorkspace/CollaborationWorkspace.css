@@ -1,0 +1,160 @@
+.workspace-badges {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.workspace-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .workspace-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.workspace-progress-card {
+  padding: 20px 22px;
+  margin-bottom: 30px;
+}
+
+.progress-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: var(--umber);
+  margin-bottom: 10px;
+}
+
+.progress-top strong {
+  color: var(--rose-deep);
+  font-size: 15px;
+}
+
+.progress-track {
+  height: 8px;
+  border-radius: 100px;
+  background: var(--cream-2);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--rose), var(--rose-deep));
+  border-radius: 100px;
+  transition: width 0.4s var(--ease);
+}
+
+.deliverables-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.deliverable-card {
+  padding: 18px 20px;
+}
+
+.deliverable-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.deliverable-title {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--ink);
+}
+
+.submitted-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.submitted-links a {
+  font-size: 12.5px;
+  color: var(--rose-deep);
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.deliverable-feedback {
+  font-size: 13px;
+  color: var(--umber);
+  background: var(--cream-2);
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.inline-form {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.deliverable-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-row {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline-row:last-child {
+  border-bottom: none;
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rose);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.timeline-title {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.timeline-desc {
+  font-size: 13px;
+  color: var(--umber);
+  margin-top: 2px;
+}
+
+.timeline-date {
+  font-size: 11.5px;
+  color: var(--umber);
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.workspace-manage-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

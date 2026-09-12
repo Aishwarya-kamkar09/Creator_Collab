@@ -1,0 +1,111 @@
+/* =================================
+   CREATOR MARQUEE
+================================= */
+
+.creator-row {
+    margin-top: 64px;
+    position: relative;
+}
+
+
+/* =================================
+   FADE EDGES
+================================= */
+
+.creator-row::before,
+.creator-row::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 90px;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.creator-row::before {
+    left: 0;
+
+    background: linear-gradient(
+        90deg,
+        var(--cream),
+        transparent
+    );
+}
+
+
+.creator-row::after {
+    right: 0;
+
+    background: linear-gradient(
+        270deg,
+        var(--cream),
+        transparent
+    );
+}
+
+
+/* =================================
+   MARQUEE TRACK
+================================= */
+
+.marquee-track {
+    display: flex;
+
+    gap: 20px;
+
+    width: max-content;
+
+    animation: scroll 34s linear infinite;
+}
+
+
+/* Pause when user hovers */
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+
+/* Infinite scrolling */
+
+@keyframes scroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 640px) {
+
+    .creator-row {
+        margin-top: 44px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .creator-row {
+        margin-top: 36px;
+    }
+
+}
+

@@ -1,0 +1,87 @@
+/* ---------- HOW IT WORKS ---------- */
+
+.steps {
+  position: relative;
+}
+
+.steps-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.vine {
+  position: absolute;
+  left: 29px;
+  top: 14px;
+  bottom: 14px;
+  width: 2px;
+
+  background: repeating-linear-gradient(
+    180deg,
+    var(--sage) 0 6px,
+    transparent 6px 12px
+  );
+}
+
+.step {
+  display: flex;
+  gap: 28px;
+  padding: 0 0 56px;
+  position: relative;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+.step-num {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background: var(--paper);
+  border: 2px solid var(--sage);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Fraunces", serif;
+  font-size: 22px;
+
+  color: var(--sage-deep);
+
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+
+  transition:
+    transform 0.4s var(--ease),
+    background 0.4s,
+    color 0.4s;
+}
+
+.step:hover .step-num {
+  background: var(--sage);
+  color: #fff;
+  transform: scale(1.08);
+}
+
+.step-body {
+  padding-top: 8px;
+}
+
+.step-body h3 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.step-body p {
+  font-size: 15px;
+  color: var(--umber);
+  line-height: 1.65;
+  max-width: 520px;
+}
+
