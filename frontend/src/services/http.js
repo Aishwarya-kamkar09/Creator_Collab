@@ -1,7 +1,8 @@
 // Shared request helper used by every service file.
 // NOTE: the backend mounts every route under /api/v1 (see backend/src/app.js),
 // so the base URL must include the /v1 segment or every request 404s.
-export const API_URL = "http://localhost:5000/api/v1";
+// export const API_URL = "http://localhost:5000/api/v1";
+export const API_URL = "https://creator-collab.onrender.com/api/v1";
 
 export async function request(path, options = {}) {
   const response = await fetch(`${API_URL}${path}`, {
